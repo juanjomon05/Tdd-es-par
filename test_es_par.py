@@ -1,5 +1,6 @@
 import unittest
 from math_utils import es_par 
+from test_es_multiplo_de import es_multiplo_de 
 
 class TestEsPar(unittest.TestCase):
     def test_4_es_par(self):
@@ -19,7 +20,11 @@ class TestEsNegativo(unittest.TestCase):
         
 class TestEsNegativo(unittest.TestCase):
     def test_es_negativo(self):
-        self.assertTrue(es_par(-1))
+        self.assertFalse(es_par(-1))
+
+class TestEsMultiplo(unittest.TestCase):
+    def test_6_es_multiplo_de_6(self):
+        self.assertTrue(es_multiplo_de(6,2))
 
 if __name__ == "__main__":
     unittest.main()
