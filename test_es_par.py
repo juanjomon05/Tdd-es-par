@@ -13,6 +13,13 @@ class TestEsCero(unittest.TestCase):
     def test_0_es_par(self):
         self.assertTrue(es_par(0))
 
+class TestEsNegativo(unittest.TestCase):
+    def test_es_negativo(self):
+        self.assertTrue(es_par(-2))
+        
+class TestEsNegativo(unittest.TestCase):
+    def test_es_negativo(self):
+        self.assertTrue(es_par(-1))
 
 if __name__ == "__main__":
     unittest.main()
